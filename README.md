@@ -20,7 +20,7 @@ The game maintains two separate board representations. The first, referred to as
 
 The second representation, referred to as the board, stores character values 'O', '.', and 'X' for display purposes. Maintaining a separate visual representation eliminates the need for repeated formatting whenever the board is printed to the console. Both representations are updated simultaneously whenever a move is made. 
 
-![Sample Grid in backend](images/sampleGrid.png.png)
+![Sample Grid in backend](images/sampleGrid.png)
 ![Sample Board in Console](images/sampleBoard.png)
 
 To efficiently determine where pieces should be placed, the program maintains a SlotIndex array. Each element stores the highest available row within its corresponding column. This removes the need to repeatedly search columns for empty positions and also provides a simple method for detecting full columns. 
